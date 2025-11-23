@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Phức Tạp: Blog Post</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        article {
+            flex: 3;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+        aside {
+            flex: 1;
+            padding-left: 20px;
+            background-color: #f9f9f9;
+        }
+        section.comments {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tên Blog Cực Kỳ Phức Tạp</h1>
+            <p>Khám phá thế giới của HTML, CSS và JS!</p>
+        </header>
+
+        <nav aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#posts">Bài Viết</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article id="main-post">
+                <header>
+                    <h2>Sự Phức Tạp Thú Vị Của Cấu Trúc Web</h2>
+                    <p style="color: #666; font-style: italic;">Đăng bởi: **Gemini AI** vào <time datetime="2025-11-23">23/11/2025</time></p>
+                </header>
+
+                <section>
+                    <h3>1. Các Phần Tử Ngữ Nghĩa HTML5</h3>
+                    <p>Chúng ta đang sử dụng các thẻ ngữ nghĩa như **$\lt$article$\gt$**, **$\lt$section$\gt$**, **$\lt$aside$\gt$**, và **$\lt$nav$\gt$**. Điều này giúp cả trình duyệt và các công cụ tìm kiếm hiểu rõ hơn về cấu trúc và vai trò của từng phần nội dung.</p>
+
+                    <details>
+                        <summary>Nhấn để xem Ví dụ về Thuộc tính Ngữ nghĩa</summary>
+                        <figure>
+                            <img src="placeholder-image.jpg" alt="Sơ đồ cấu trúc HTML phức tạp" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+                            <figcaption>Hình 1: Mô tả cách các phần tử lồng vào nhau.</figcaption>
+                        </figure>
+                        <p>Thẻ **$\lt$figure$\gt$** và **$\lt$figcaption$\gt$** cung cấp ngữ cảnh cho nội dung đa phương tiện.</p>
+                    </details>
+                </section>
+
+                <section class="interactive-area">
+                    <h3>2. Khu vực Tương tác (JavaScript)</h3>
+                    <button id="toggle-info-btn" style="padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Bật/Tắt Thông tin Ẩn</button>
+                    <div id="hidden-info" style="margin-top: 15px; padding: 10px; border: 1px solid #ccc; background-color: #e9ecef; display: none;">
+                        <p>Đây là thông tin bổ sung chỉ hiển thị khi bạn nhấn nút. Nó được điều khiển bởi JavaScript.</p>
+                    </div>
+                </section>
+                
+                <section class="comments">
+                    <h4>Bình luận (3)</h4>
+                    <details open>
+                        <summary>Xem tất cả bình luận</summary>
+                        <blockquote cite="Người dùng 1">
+                            <p>Bài viết rất chi tiết và hữu ích!</p>
+                            <footer>— <cite>Độc giả A</cite></footer>
+                        </blockquote>
+                        <blockquote cite="Người dùng 2">
+                            <p>Cảm ơn đã giải thích về thẻ $\lt$details$\gt$!</p>
+                            <footer>— <cite>Độc giả B</cite></footer>
+                        </blockquote>
+                        <form id="comment-form" style="margin-top: 20px;">
+                            <label for="comment-text">Thêm Bình luận của bạn:</label><br>
+                            <textarea id="comment-text" name="comment-text" rows="4" cols="50" required style="width: 100%; margin-top: 5px;"></textarea><br>
+                            <button type="submit" style="margin-top: 10px; background-color: #28a745; color: white; padding: 8px 15px; border: none;">Gửi Bình Luận</button>
+                        </form>
+                    </details>
+                </section>
+
+            </article>
+
+            <aside aria-label="Thông tin liên quan">
+                <h4>Bài Viết Liên Quan</h4>
+                <ul>
+                    <li><a href="#">Tối ưu hóa tốc độ tải trang</a></li>
+                    <li><a href="#">Flexbox và Grid CSS</a></li>
+                    <li><a href="#">Giới thiệu về Web Component</a></li>
+                </ul>
+                <hr>
+                <h4>Quảng Cáo</h4>
+                <div style="border: 1px dashed #000; padding: 10px; text-align: center;">
+                    <p>Quảng Cáo Ngẫu Nhiên</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <small>&copy; 2025 Blog Cực Kỳ Phức Tạp. Được xây dựng với HTML5.</small>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('toggle-info-btn').addEventListener('click', function() {
+            var hiddenInfo = document.getElementById('hidden-info');
+            // Thay đổi thuộc tính display
+            if (hiddenInfo.style.display === 'none') {
+                hiddenInfo.style.display = 'block';
+                this.textContent = 'Tắt Thông tin Ẩn';
+            } else {
+                hiddenInfo.style.display = 'none';
+                this.textContent = 'Bật/Tắt Thông tin Ẩn';
+            }
+        });
+
+        // Xử lý form (ngăn chặn gửi đi và hiển thị thông báo)
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn form gửi đi theo cách truyền thống
+            var commentText = document.getElementById('comment-text').value;
+            if (commentText) {
+                alert('Bình luận của bạn đã được giả lập gửi đi: "' + commentText + '"');
+                // Thực tế ở đây sẽ là lệnh AJAX hoặc Fetch API để gửi dữ liệu lên server
+                document.getElementById('comment-text').value = ''; // Xóa nội dung
+            }
+        });
+    </script>
+
+</body>
+</html>
