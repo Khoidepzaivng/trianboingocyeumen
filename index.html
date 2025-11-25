@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Món Quà Tri Ân Đặc Biệt Dành Cho Bội Ngọc 🎁</title>
+    <style>
+        /* --- CSS Cho Giao Diện Nữ Tính & Ấm Áp --- */
+        :root {
+            /* Bảng màu nhẹ nhàng, nữ tính */
+            --pink-light: #FFEDED; 
+            --pink-medium: #F4C4D1;
+            --pink-dark: #E493B3;
+            --cream: #FFFDD0;
+            --text-color: #5D5D5D;
+            --accent-color: #A3657C;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Font cổ điển, ấm áp */
+            background-color: var(--cream); 
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            line-height: 1.6;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23f4c4d180"/></svg>'); /* Chấm bi hồng nhạt */
+        }
+
+        .gift-box {
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 5px solid var(--pink-medium); /* Viền hộp quà */
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Dải ruy băng trang trí */
+        .ribbon-top, .ribbon-bottom {
+            height: 20px;
+            background-color: var(--pink-dark);
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .ribbon-top {
+            top: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .ribbon-bottom {
+            bottom: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .header {
+            color: var(--accent-color);
+            font-size: 2.2em;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif; /* Font thanh lịch */
+            position: relative;
+        }
+
+        .header::after {
+            content: '💖';
+            position: absolute;
+            right: -30px;
+            top: 0;
+            font-size: 0.7em;
+        }
+        
+        .header::before {
+            content: '⭐';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            font-size: 0.7em;
+        }
+
+        .recipient {
+            font-size: 1.8em;
+            color: var(--pink-dark);
+            margin: 10px 0 30px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: var(--pink-light);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .message-box {
+            text-align: left;
+            padding: 20px 25px;
+            border: 2px dashed var(--pink-medium); /* Hộp thư */
+            border-radius: 10px;
+            background-color: var(--pink-light);
+            margin: 20px 0;
+        }
+
+        .message-box p {
+            font-size: 1.1em;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            text-indent: 20px; /* Thụt lề đầu dòng */
+        }
+        
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: var(--accent-color);
+            font-size: 1.2em;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        /* Stickers (Trang trí thêm) */
+        .sticker {
+            position: absolute;
+            font-size: 2.5em;
+            pointer-events: none;
+            z-index: 10;
+            opacity: 0.85;
+            transition: transform 0.3s ease;
+        }
+        .sticker:hover {
+            transform: scale(1.1);
+        }
+
+        #sticker1 { top: -10px; left: -10px; transform: rotate(-15deg); }
+        #sticker2 { top: 50px; right: 20px; transform: rotate(10deg); font-size: 3em; color: var(--pink-dark); }
+        #sticker3 { bottom: 20px; left: 10px; transform: rotate(5deg); }
+        #sticker4 { bottom: -15px; right: -15px; transform: rotate(20deg); }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="gift-box">
+        
+        <div class="ribbon-top"></div>
+        <div class="ribbon-bottom"></div>
+
+        <span class="sticker" id="sticker1">🎀</span>
+        <span class="sticker" id="sticker2">✨</span>
+        <span class="sticker" id="sticker3">🌷</span>
+        <span class="sticker" id="sticker4">💜</span>
+
+        <h1 class="header">💌 MÓN QUÀ TỪ TRÁI TIM 💌</h1>
+        
+        <h2 class="recipient">Dành tặng: Bội Ngọc 💖</h2>
+
+        <div class="message-box">
+            <p><strong>Bội Ngọc yêu thương,</strong></p>
+            
+            <p>Mình đã tạo trang web nhỏ bé này như một cách đặc biệt để gửi lời tri ân sâu sắc nhất đến cậu. Chỉ là một việc nhỏ, nhưng việc cậu luôn sẵn lòng ân cần đặt hàng giúp mình, không một lời than vãn, đã mang lại sự giúp đỡ rất lớn và sự ấm áp không gì sánh được.</p>
+            
+            <p>Trong cuộc sống bộn bề, có được một người bạn chân thành, chu đáo như cậu là một điều may mắn vô giá. Sự nhiệt tình, đáng tin cậy của cậu khiến mình cảm thấy mọi thứ trở nên dễ dàng và nhẹ nhàng hơn rất nhiều. Cậu không chỉ giúp đỡ bằng hành động, mà còn bằng cả tấm lòng, và mình thực sự trân trọng điều đó.</p>
+            
+            <p>Cảm ơn Bội Ngọc thật nhiều vì tất cả những điều tốt đẹp cậu đã làm. Mong rằng món quà tinh thần này, tuy đơn giản nhưng chứa đựng tất cả tình cảm quý mến và biết ơn của mình, sẽ làm cậu mỉm cười. Hãy luôn rạng rỡ và hạnh phúc nhé!</p>
+            
+            <p>Yêu cậu! 🥰</p>
+        </div>
+        
+        <div class="signature">
+            — Người bạn luôn biết ơn cậu! ✨
+        </div>
+        
+    </div>
+
+</body>
+</html>
